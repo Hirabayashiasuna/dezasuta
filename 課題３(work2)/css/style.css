@@ -22,4 +22,19 @@ h2 {
     background-color: white;
 }
 
-.box h3 {}
+.box img {
+    max-width: 100%;
+    object-fit: cover;
+
+}
+
+.box h3 {
+    font-size: 23px;
+    font-weight: bold;
+    color: green;
+    border-left: 8px solid green
+}
+
+.box p {
+    line-height: 1.6;
+}
