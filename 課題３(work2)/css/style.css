@@ -55,6 +55,12 @@ h2 {
 
     .service {
         flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    h2 {
+        margin: 7% 0;
+        ;
     }
 
     .box {
