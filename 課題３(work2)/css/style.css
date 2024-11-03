@@ -19,22 +19,48 @@ h2 {
     display: flex;
     justify-content: space-between;
     gap: 15px;
+
+
+}
+
+.box {
     background-color: white;
+
 }
 
 .box img {
     max-width: 100%;
-    object-fit: cover;
+    padding-bottom: 10px;
+
 
 }
 
 .box h3 {
-    font-size: 23px;
+    padding-left: 4px;
+    margin: 4px;
+    font-size: 20px;
     font-weight: bold;
     color: green;
-    border-left: 8px solid green
+    border-left: 7px solid green
 }
 
+
 .box p {
-    line-height: 1.6;
+    line-height: 1.2;
+    padding: 10px 10px;
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .service {
+        flex-direction: column;
+    }
+
+    .box {
+        margin: 10px 10px;
+    }
+
+
+
 }
