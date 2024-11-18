@@ -111,8 +111,13 @@ a:hover {
 
 .ABOUT-photo img {
     border-bottom-right-radius: 82px;
-    padding-right: 58px;
+
 }
+
+.ABOUT-inner {
+    padding-left: 58px;
+}
+
 
 #ABOUT h2 {
     width: 272px;
