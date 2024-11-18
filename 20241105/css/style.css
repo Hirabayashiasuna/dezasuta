@@ -1,9 +1,9 @@
 @charset "uft-8";
 
 body {
-    max-width: 1000px;
-    margin: 0 auto;
+
     background-color: #E8D9BF;
+
 }
 
 
@@ -29,6 +29,7 @@ body {
     left: 0;
     width: 100%;
     box-sizing: border-box;
+
 }
 
 .header_logo {
@@ -53,6 +54,8 @@ body {
     text-align: center;
 }
 
+
+
 a {
     color: inherit;
     transition: 0.3s;
@@ -65,11 +68,12 @@ a:hover {
 
 .main {
     width: 52%;
+    margin: 0 auto;
 
 }
 
 
-.catch {
+#catch {
     margin: auto;
     text-align: center;
     font-weight: normal;
@@ -80,14 +84,13 @@ a:hover {
 
 .catch_1 {
     font-size: 30px;
-    line-height: 3.8;
     margin-bottom: 46px;
 
 }
 
 .catch_2 {
     font-size: 82px;
-    line-height: 1.1;
+    line-height: 1.17;
     margin-bottom: 20px;
 
 }
@@ -95,4 +98,245 @@ a:hover {
 .catch_3 {
     font-size: 23px;
     line-height: 1.6;
+}
+
+
+
+#ABOUT {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 96px;
+}
+
+.ABOUT-photo img {
+    border-bottom-right-radius: 82px;
+    padding-right: 58px;
+}
+
+#ABOUT h2 {
+    width: 272px;
+    padding-top: 56px;
+    padding-bottom: 48px;
+
+}
+
+.ABOUT-text1 {
+    font-size: 44px;
+    line-height: 1.4;
+    margin-bottom: 23px;
+}
+
+.ABOUT-text2 {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#MENU {
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+#MENU h2 {
+    width: 151px;
+    margin: 0 auto;
+    padding-bottom: 39px;
+}
+
+.MENU-inner {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 90px;
+    position: relative;
+
+}
+
+
+.MENU-inner img {
+    border-top-right-radius: 42px;
+
+}
+
+#MENU h3 {
+    font-size: 38px;
+    color: #D30202;
+    position: absolute;
+    top: 187px;
+    /*left: 12px;ここに記載するとすべて文字が重なってしまいます*/
+}
+
+#MENU p {
+    font-size: 17px;
+    line-height: 1.47;
+    padding-top: 44px;
+}
+
+#GALLERY {
+    padding-bottom: 60px;
+}
+
+#GALLERY h2 {
+    width: 245px;
+    margin: 0 auto;
+    padding-bottom: 17px;
+
+
+}
+
+#GALLERY ul {
+    display: flex;
+}
+
+#GALLERY li {
+    width: 20%;
+    object-fit: cover;
+}
+
+#EVENT {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#EVENT h2 {
+    width: 174px;
+    margin: 0 auto;
+    padding-bottom: 31px;
+}
+
+.news-inner {
+    border: 3.6px solid;
+    background-color: #FFFFFF;
+    padding-top: 41px;
+    padding-bottom: 41px;
+}
+
+.news-inner ul {
+    display: flex;
+    padding-left: 162px;
+
+}
+
+.news-inner li {
+    text-align: left;
+    font-size: 23px;
+    line-height: 1.95;
+    padding-right: 46px;
+}
+
+.news-inner a {
+    border-bottom: 1px solid;
+}
+
+
+
+
+
+
+
+/*ここからやる。
+
+/*スマホ版のメニュー*/
+
+.sp_nav,
+.sp_btn {
+    display: none;
+}
+
+/*メニューとロゴがぶつかるタイミング*/
+
+@media screen and (max-width: 1100px) {
+
+    .pc_nav {
+        display: none;
+    }
+
+    .sp_btn {
+        display: block;
+        height: 23px;
+        cursor: pointer;
+    }
+
+    .sp_btn span {
+        display: block;
+        width: 33px;
+        height: 3px;
+        background: #fff;
+        border-radius: 2px;
+        /*位置の調整*/
+        position: relative;
+        top: 10px;
+        transition: 0.3s;
+    }
+
+    .sp_btn span::before .sp_btn span::after {
+        content: "";
+        display: block;
+        width: 33px;
+        height: 3px;
+        background: #fff;
+        border-radius: 2px;
+        /*位置の調整*/
+        position: absolute;
+        top: 21px;
+        right: 25px;
+        /*重なり具合の調整*/
+        z-index: 2;
+        transition: 0.3s;
+
+    }
+
+    .sp_btn span::before {
+        bottom: 10px;
+    }
+
+    .sp_btn::after {
+        top: 10px;
+    }
+
+    /*バツ印*/
+    .sp_btn.open span {
+        background: transparent;
+
+    }
+
+    .sp_btn.open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+
+    .sp_btn.open span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+}
+
+/*メニューの見た目*/
+.sp_nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /*デバイスの高さ*/
+    background: rgba(0, 0, 0, 0.8);
+    /*重なり具合の調整*/
+    z-index: 1;
+
+}
+
+.sp_nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 40px;
+}
+
+.sp_nav ul li {
+    color: #fff;
+    font-size: 18px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
 }
