@@ -5,26 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design Cafe</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
     <header id="HEADER">
         <div class="header_slider">
             <div>
-                <img src="./images/pc_first-100.jpg" alt="店内の様子">
+                <picture>
+                    <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
+                    <img src="./images/pc_first-100.jpg" alt="店内の様子">
+                </picture>
+
+            </div>
+            <div>
+                <picture>
+                    <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
+                    <img src="./images/slider_2.jpg" alt="店内の様子">
+                </picture>
 
             </div>
         </div>
         <div class="header_wrap">
             <h1 class="header_logo">
-                <picture>
-                    <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
+                <div>
                     <img src="./images/design_cafe_logo_header@2x.png" alt="DEZAIGN CAFE">
-                </picture>
+                </div>
             </h1>
             <nav class="pc_nav">
                 <ul>
@@ -39,8 +52,6 @@
             <div class="sp_btn">
                 <span></span>
             </div>
-
-
 
             <nav class="sp_nav">
                 <ul>
@@ -58,30 +69,36 @@
 
     <main>
         <div id="catch">
-
             <p class="catch_1">Have a happy day From a cup of coffee.</p>
             <p class="catch_2">ハッピーに溢れる1日を<br />
                 1杯のコーヒーから。</p>
-            <p class="catch_3">毎日を丁寧に大切に過ごしたい。
+            <p class="catch_3">毎日を丁寧に大切に過ごしたい。<br class="sp_br">
                 だからこそ一杯一杯丁寧にコーヒーを入れ<br />
-                足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
+                足を運んでくれるお客さんには落ち着く空間と<br class="sp_br">
+                こだわりのコーヒーを提供したい。</p>
 
         </div>
 
         <section id="ABOUT" class="ABOUT-wrap">
             <div class="ABOUT-photo">
-                <img src="./images/pc_about-100.jpg" alt="コーヒーカップで乾杯">
+                <picture>
+                    <source srcset="./images/about_us@2x-100.jpg" media="(max-width:767px)">
+                    <img src="./images/pc_about-100.jpg" alt="コーヒーカップで乾杯">
+                </picture>
             </div>
 
             <div class="ABOUT-inner">
 
-                <h2>
+                <h2 class="ABOUT-logo">
+
                     <img src="./images/about_us@2x.png" alt="赤いABOUT us文字">
+
                 </h2>
+
                 <div class="ABOUT-text">
 
                     <p class="ABOUT-text1">
-                        私たちが提供する<br />
+                        私たちが提供する<br /><br class="sp_br">
                         こだわりのコーヒー
                     </p>
                     <p class="ABOUT-text2">
@@ -108,8 +125,10 @@
             <div class="MENU-inner">
                 <div class="MENU-box">
                     <div>
-                        <img src="./images/pc_menu_drink-100.jpg" alt="アイスカフェオレ">
-
+                        <picture>
+                            <source srcset="./images/drink_sp@2x-100.jpg" media="(max-width:767px)">
+                            <img src="./images/pc_menu_drink-100.jpg" alt="アイスカフェオレ">
+                        </picture>
                         <h3 class="MENU-list">Drink </h3>
                     </div>
                     <p>ドリンクメニューの概要を100文字程度で紹介します。
@@ -120,7 +139,10 @@
 
                 <div class="MENU-box">
                     <div>
-                        <img src="./images/pc_menu_food-100.jpg" alt="パスタを食べている">
+                        <picture>
+                            <source srcset="./images/food_sp@2x-100.jpg" media="(max-width:767px)">
+                            <img src="./images/pc_menu_food-100.jpg" alt="パスタを食べている">
+                        </picture>
 
                         <h3 class="MENU-list">Food</h3>
                     </div>
@@ -130,7 +152,11 @@
 
                 <div class="MENU-box">
                     <div>
-                        <img src="./images/pc_menu_sweets-100.jpg" alt="ケーキ">
+                        <picture>
+                            <source srcset="./images/cake_sp@2x-100.jpg" media="(max-width:767px)">
+                            <img src="./images/pc_menu_sweets-100.jpg" alt="ケーキ">
+                        </picture>
+
 
                         <h3 class="MENU-list">Sweets</h3>
                     </div>
@@ -146,11 +172,12 @@
                 <img src="./images/gallery@2x.png" alt="赤いGALLERY文字">
             </h2>
 
-            <ul>
+            <ul class="slider">
                 <li><img src="./images/pc_gallary_05-100.jpg" alt="店内のお客の様子"></li>
                 <li><img src="./images/pc_gallary_04-100.jpg" alt="コップの中にコーヒー豆"></li>
                 <li> <img src="./images/pc_gallary_03-100.jpg" alt="別アングルの店内"></li>
                 <li> <img src="./images/pc_gallary_02-100.jpg" alt="店内のCAFEの看板"></li>
+                <li> <img src="./images/pc_gallary_01-100.jpg" alt="カフェラテを注ぐ"></li>
                 <li> <img src="./images/pc_gallary_01-100.jpg" alt="カフェラテを注ぐ"></li>
             </ul>
 
@@ -205,7 +232,6 @@
                     <li>東京都渋谷区東京南123デザインビルB1</li>
                     <li>MAIL:info@designcafe.tokyo</li>
                 </ul>
-
                 <div class="page-logo">
                     <a href="#HEADER"><img src="./images/to_top@2x.png" alt="赤いpege top logo">
                     </a>
@@ -224,10 +250,31 @@
         $(function () {
             $('.sp_btn').on('click', function () {
                 $('.sp_btn').toggleClass('open');
-                $('.sp_nav').fadeToggle()
+                $('.sp_nav').fadeToggle();
             })
-
-
+            $('.header_slider').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: false,
+            })
+            $('.slider').slick({
+                autoplay: true,//自動的に動き出すか。初期値はfalse。
+                infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+                slidesToShow: 5,//スライドを画面に3枚見せる
+                slidesToScroll: 1,//1回のスクロールで3枚の写真を移動して見せる
+                prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+                nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+                responsive: [
+                    {
+                        breakpoint: 767,//モニターの横幅が769px以下の見せ方
+                        settings: {
+                            slidesToShow: 1,//スライドを画面に2枚見せる
+                            slidesToScroll: 1,//1回のスクロールで2枚の写真を移動して見せる
+                        }
+                    },
+                ]
+            });
         })
     </script>
 
