@@ -295,8 +295,8 @@ a:hover {
 .page-logo {
     width: 125px;
     position: fixed;
-    bottom: 16%;
-    right: 16%;
+    bottom: 5%;
+    right: 2%;
 
 
 }
@@ -338,7 +338,7 @@ a:hover {
     height: auto;
 }
 
-*矢印の設定*/
+
 
 /*戻る、次へ矢印の位置*/
 .slick-prev,
@@ -349,14 +349,8 @@ a:hover {
     cursor: pointer;
     /*マウスカーソルを指マークに*/
     outline: none;
-    /*クリックをしたら出てくる枠線を消す*/
-    border-top: 2px solid #FFFFFF;
-    /*矢印の色*/
-    border-right: 2px solid #FFFFFF;
-    /*矢印の色*/
-    height: 15px;
-    width: 15px;
 }
+
 
 .slick-prev {
     /*戻る矢印の位置と形状*/
@@ -518,6 +512,21 @@ a:hover {
         padding-bottom: 0;
     }
 
+    .catch_1 {
+        font-size: 17px;
+    }
+
+    .catch_2 {
+        font-size: 38px;
+    }
+
+    .catch_3 {
+        font-size: 16px;
+    }
+
+
+
+
     #ABOUT {
         width: 100%;
         flex-direction: column;
@@ -564,6 +573,7 @@ a:hover {
 
     #MENU h3 {
         font-size: 40px;
+        padding-bottom: 19px;
     }
 
 
@@ -576,6 +586,7 @@ a:hover {
 
     .MENU-box {
         width: 100%;
+        padding-bottom: 73px;
     }
 
 
@@ -585,7 +596,7 @@ a:hover {
 
     #GALLERY h2 {
         width: 142px;
-        padding-top: 88px;
+        padding-top: 23px;
         padding-bottom: 16px;
     }
 
@@ -596,22 +607,37 @@ a:hover {
 
     }
 
-    .news-inner {
-        margin: 20px;
-        margin: 20px;
+    #EVENT h2 {
+        padding-top: 34px;
+        padding-bottom: 20px;
     }
+
+    .news-inner {
+        margin: 0 20px;
+        padding: 0;
+        padding-top: 20px;
+
+    }
+
+    .news-inner>div {
+        width: 100%;
+    }
+
 
     .news-inner ul {
-        padding-left: 25px;
-        display: block
+        padding: 0 30px;
+        display: block;
+        padding-bottom: 27px;
     }
 
-    /*.news-inner a {
+    .news-inner li {
+        line-height: 1.27;
+        font-size: 16px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
-*/
+
 
 
     #EVENT h2 {
@@ -634,19 +660,36 @@ a:hover {
     .footer-wrap {
         flex-direction: column;
         padding-left: 20px;
+        padding-top: 41px;
+
+    }
+
+    .footer-logo {
+        padding-bottom: 28px;
+
     }
 
     .footer-list {
+
         padding: 0;
         padding-bottom: 41px;
     }
 
+    .footer-list li {
+        font-size: 18px;
+        line-height: 1.7;
+
+    }
+
+    #FOOTER p {
+        padding-bottom: 33px;
+    }
+
+
     .page-logo {
         width: 100px;
-        bottom: 44%;
-        right: 12%;
-
-
+        bottom: 2%;
+        right: 2%;
     }
 
 
